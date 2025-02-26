@@ -26,9 +26,15 @@ FONT SIZE SYSTEM (px)
 
 Primary: #e67e22
 https://maketintsandshades.com/
-#94d82d #51cf66  #ffd43b #eb984e #45260a;
-- Tints: #fdf2e9 #cf711f #fae5d3  
+#94d82d #51cf66  #ffd43b  
+- Tints:
+ #fdf2e9 
+  #fae5d3  
+ #eb984e
 - Shades:
+#45260a
+#cf711f
+
 - Accents: 
 - Greys: 
 #555
@@ -153,7 +159,7 @@ body {
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
 }
-
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -163,6 +169,10 @@ body {
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 
   /* transition: background-color 300ms; */
   transition: all 300ms;
@@ -194,6 +204,18 @@ body {
 
   /*  Add border to inside  */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
@@ -231,6 +253,13 @@ body {
   width: 3rem;
   height: 3rem;
   color: #e67e22;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 8px rgba(230, 125, 34, 0.5);
 }
 
 /* ************************* */
